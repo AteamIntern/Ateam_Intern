@@ -27,7 +27,7 @@ public class HpGauge : MonoBehaviour
 
     public void ShowAnimation(float hpPercentage)
     {
-        Debug.Log(hpPercentage);
+        //Debug.Log(hpPercentage);
 
         Vector3 newScale = new Vector3(localScaleXMax * hpPercentage, transform.lossyScale.y, transform.localScale.z);
         iTween.ScaleTo(this.gameObject, iTween.Hash(
